@@ -173,19 +173,14 @@ Podemos usar dos formas de incluir las definiciones de estilo en un documento _h
 Podemos incluir archivos local o usar links a servidores externos.
 
 ### Etiqueta style
+
+Podemos definir nuestro estilo dentro de las etiquetas **style** de hmtl.
+
 ```html
 <style>
-    body {
-       background-color: lightblue;
-    }
-    h1 {
-        color: navy;
-        margin-left: 20px;
-    }
+
 </style>
 ```
-
-
 
 ## Sintaxis
 
@@ -246,19 +241,79 @@ Esta es una lista de algunos de los atributos de CSS, una lista completa la pued
 
 ### Colores
 
+Para usar colores podemos identificarlos tanto por su nombre en inglés como en su representación en RGB u otras representaciones como HEX, HSL, HLSA y RGBA
+
+Por ejemplo
+
+* rgb(200,120,40)
+* red
+* #ff6347
+
+Atributos de color:
+
+* background-color : Define el color de fondo
+* color:    Define el color del texto
+* border:   Define el borde y su color.
+ 
 ### Fondos
+
+Atributos para fondos:
+* background-color: Para el color de fondo 
+* background-image: Para cargar una imagen de fondo
+
 
 ### Bordes
 
+Podemos definir atributos para su borde
+* border-style: Estilo del borde, este puede ser:
+    * dotted
+    * solid
+    * double
+    * none
+    * hidden
+* border-left-style, border-right-style, border-top-style, border-bottom-style: Define bordes para cada dirección.
+* border-width: Andcho del borde en pixeles.
+* border-color: Color del borde.
+
 ### Marging
+
+Especifica el margen entre cada elemento de la página.
+
+* margin-top
+* margin-right
+* margin-bottom
+* margin-left
 
 ### Padding
 
+Para generar espacio alrededor del elemento.
+
+* padding-top
+* padding-right
+* padding-bottom
+* padding-left
+
+
 ### Dimensiones
 
+Especificar tamaños para los elementos
 
-# JAVASCRIPT
+* height
+* width
+* max-height, min-height 
+* max-width, min-width 
 
-Para seguir leyendo [Tutorial](https://www.w3schools.com/js/default.asp) de javascript.
+## Frameworks
+
+Existe estilos reutilizables disponibles, son faciles de incluir en nuestra página. Algunos ejemplos son:
+
+* [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+* [Materials](https://www.muicss.com/)
+
+# JavaScript
+
+Javascript es un lenguaje de programación que corre del lado del cliente en el navegador.
+
+Puede completar este [curso](https://www.codecademy.com/learn/introduction-to-javascript) de introducción al lenguaje impoartido por codecademy
 
 <center><a href="https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion0/Python%20y%20la%20orientación%20a%20objetos.md">Siguiente</a></center>

@@ -1,36 +1,95 @@
 <html>
     <head>
         <title>Blog - Perfil</title>
+        <link href="https://cdn.muicss.com/mui-0.9.39/css/mui.min.css" rel="stylesheet" type="text/css" />
+        <style>
+        /**
+            * Body CSS
+         */
+        html,
+        body {
+            height: 100%;
+        }
+
+        html,
+        body,
+        input,
+        textarea,
+        button {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+        }
+
+
+        /**
+        * Sidebar CSS
+        */
+            #sidebar {
+                background-color: #E57373;
+                padding: 15px;
+        }
+
+        @media (min-width: 768px) {
+            #sidebar {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                width: 300px;
+                height: 100%;
+                padding-top: 30px;
+            }
+        }
+
+        /**
+        * Content CSS
+        */
+        @media (min-width: 768px) {
+            #content {
+                margin-left: 380px;
+                
+            }
+        }
+    </style>
     </head>
     <body>
-        <h1>
-            Sebastián Bórquez
-        </h1>
+        <div id="sidebar">
+                <div class="mui--text-light mui--text-display1 mui--align-vertical">
 
-        <h2>
-            Información de contacto
-        </h2>
-        <table class="center">
-            <tr>
-                <td><b>Nombre</b></td><td>Sebastián Bórquez</td>
-            </tr>
-            <tr>
-                <td><b>Correo</b></td><td>sebastian.borquez.g@gmail.com</td>
-            </tr>
-            <tr>
-                <td><b>Página web</b></td><td><a href="http://labcomp.cl/~sborquez/">Labcomp.cl</a></td>
-            </tr>
-            <tr>
-                    <td><b>Ciudad</b></td><td>Valparaiso</td>
-                </tr>
-        </table>
-        <h2>
-        Mis post
-        </h2>
-        <ul>
-            <li><h3>Otro post</h3></li>
-            <li><h3>Imagen</h3></li>
-            <li><h3>Primer Post</h3></li>
-        </ul>
+                    <h1>
+                        Sebastián Bórquez
+                    </h1>
+                    
+                    <h2>
+                        Información de contacto
+                    </h2>
+                    
+                    <table class="center">
+                        <tr>
+                            <td><b>Nombre</b></td><td>Sebastián Bórquez</td>
+                        </tr>
+                        <tr>
+                            <td><b>Correo</b></td><td>sebastian.borquez.g@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td><b>Página web</b></td><td><a href="http://labcomp.cl/~sborquez/">Labcomp.cl</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Ciudad</b></td><td>Valparaiso</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="content" class="mui-container-fluid">
+                <h2>
+                    Mis post
+                </h2>
+                <ul>
+                    <li><h3>Otro post</h3></li>
+                    <li><h3>Imagen</h3></li>
+                    <li><h3>Primer Post</h3></li>
+                </ul>
+            </div>
+
     </body>
 </html>
