@@ -20,15 +20,17 @@ post1 = {
     "contenido" : "Contenido del post"
 }
 
+# listas
+gastos = [20, 10, 30, 20, 0, 10]
+
 usuario = {
     "nombre": "Sebastian",
     "apellido":"Borquez",
     "carrera": 73,
     "posts" : [post1]
+    "gastos" = gastos
 }
 
-# listas
-gastos = [20, 10, 30, 20, 0, 10]
 
 #funciones
 def elevar(numeros, potencia):
