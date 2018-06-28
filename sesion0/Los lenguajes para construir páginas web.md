@@ -99,6 +99,7 @@ Etiquetas para organizar como mostramos los elementos.
 </table>
 ```
 
+### Formularios
 Para seguir leyendo [Tutorial](https://www.w3schools.com/html/html_basic.asp) y [Referencia](https://www.w3schools.com/tags/default.asp) de html.
 
 # CSS
