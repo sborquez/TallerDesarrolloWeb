@@ -301,7 +301,7 @@ Especificar tamaños para los elementos
 * height
 * width
 * max-height, min-height 
-* max-width, min-width 
+* max-width, min-width  
 
 ## Frameworks
 

@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Posts</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>id</th><th>titulo</th>
+        </tr>
+        {%for element in posts%}
+            <tr>
+                <td>{{element.id}}</td>
+                <td>{{element.titulo}}</td>
+            </tr>    
+        {% endfor %}
+    </table>
+</body>
+</html>
+

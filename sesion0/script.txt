@@ -11,6 +11,8 @@ Instalar requisitos
 
 Editores de texto
 VS code
+    Instalar extensiones
+
 Sublime texto
 
 PostgreSQL
