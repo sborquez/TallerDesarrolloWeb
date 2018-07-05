@@ -119,7 +119,7 @@ urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 Además, debemos agregar la siguiente linea en __WebApp/WebApp/settings.py__ y crear una nueva carpeta llamada __public__ en __WebApp__.
 
 ```python
-STATIC_ROOT = "/public/"
+STATICFILES_DIRS = ( os.path.join(BASE_DIR, "public"),)
 ``` 
 
 Finalmente debemos configurar las url de nuestra aplicación, agregamos el archivo __blog/urls.py__ con el siguiente contenido.
