@@ -99,4 +99,5 @@ conda install <nombre_del_modulo> # usando anaconda
 
 pip install <nombre_del_modulo> # usando pip
 ``` 
-<center><a href="https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion0/Python%20y%20la%20orientación%20a%20objetos.md">Siguiente</a></center>
+
+<center><a href="https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion1/Qué%20es%20Django.md">Siguiente</a></center>

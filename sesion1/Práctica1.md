@@ -1,6 +1,5 @@
-# Ejercicio
+# Blog
 
-# Ejercicio
 
 Crear las siguientes vistas para nuestra aplicación.
 

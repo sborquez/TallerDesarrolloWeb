@@ -185,3 +185,5 @@ python manage.py runserver
 
 Deberiamos poder ver en nuestro navegador un "_Hello World!_".
 
+
+<center><a href="https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion1/Renderizando%20templates.md">Siguiente</a></center>

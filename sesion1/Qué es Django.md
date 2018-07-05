@@ -41,4 +41,4 @@ Django posee varios modulos para las diferentes requisitos que nuestra aplicaci�
 * Serialización 
 * Sitio de admintrador
 
-<center><a href="https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion0/Los%20lenguajes%20para%20construir%20páginas%20web.md">Siguiente</a></center>
+<center><a href="https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion1/Primera%20aplicación.md">Siguiente</a></center>
