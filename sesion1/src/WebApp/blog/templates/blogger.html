@@ -1,22 +1,25 @@
 <html>
 <head>
-    <title>Posts</title>
+    <title>{{ nombre }} {{ apellido }}</title>
 </head>
 <body>
+    <h1>{{ nombre }} {{ apellido }} </h1>
+    <h2> de {{ ciudad }}</h2>
+    <br>
     <h1>Posts</h1>
     <table>
         <tr>
-            <th>id</th><th>titulo</th><th>blogger</th><th><th>post</th>
+            <th>id</th><th>titulo</th><th>post</th>
         </tr>
         {%for element in posts%}
             <tr>
                 <td>{{element.id}}</td>
                 <td>{{element.titulo}}</td>
-                <td><a href="/blog/blogger/{{element.blogger.id}}">{{element.blogger.nombre}} {{element.blogger.apellido}}</a>  </td>
                 <td><a href="/blog/post/{{ element.id }}">ir al post</a></td>
             </tr>    
         {% endfor %}
     </table>
+
 </body>
 </html>
 

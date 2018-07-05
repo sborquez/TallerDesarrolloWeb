@@ -4,7 +4,7 @@ Cuando se realizan solicitudes usando URL, estas pueden contener variables. Un e
 
     /blogs/31
 
-Pero, que sucede si el cliente quiere solicita otro blog como por ejemplo:
+Pero, que sucede si el cliente quiere solicita otro post como por ejemplo:
 
     /blogs/42
 
@@ -14,12 +14,12 @@ Django dispone de esa facilidad [url dispacher](https://docs.djangoproject.com/e
 
 ## Agregar ruta
 
-Agregaremos un controlador para ver un blog en particular en __WebApp/blog/urls.py__.
+Agregaremos un controlador para ver un post en particular en __WebApp/blog/urls.py__.
 
 ```python
 urlpatterns = [
     url(r"^$", views.index),
-    url(r"^post/(?P<blog_id>[0-9])$", views.blog)
+    url(r"^post/(?P<post_id>[0-9])$", views.post)
 ]
 ```
 
@@ -31,15 +31,15 @@ Antes de continuar, agregaremos esta variable al fichero __view.py__ para usar d
 
 ```python
 
-usuarios = [
+_bloggers = [
     {"id": 0, "nombre": "sebastian", "apellido": "borquez", "ciudad":"Valpariso"},
     {"id": 1, "nombre":"francisco", "apellido": "lara", "ciudad":"Santiago"}
 ]
 
-blogs = [
+_posts = [
     {"id": 0, "blogger":0, "titulo":"Primero Post", "contenido":"Este es el primer post."},
     {"id": 1, "blogger":0,"titulo": "Segundo Post", "contenido": "Este es el contenido del segundo post"},
-    {"id": 2, "blogger":1, "titulo": "Tercer Post", "contenido": "Y Este es el tercer post del blog"}
+    {"id": 2, "blogger":1, "titulo": "Tercer Post", "contenido": "Y Este es el tercer post del post"}
 ]
 
 ```
@@ -47,12 +47,12 @@ blogs = [
 Debemos agregar la nueva función para la vista.
 
 ```python
-def blog(request, blog_id):
+def post(request, post_id):
     try:
-        blog_id = int(blog_id)
-        return HttpResponse('<h1>{0}</h1><p>{1}</p>'.format(posts[blog_id]["titulo"], posts[blog_id]["contenido"]))
+        post_id = int(post_id)
+        return HttpResponse('<h1>{0}</h1><p>{1}</p>'.format(_posts[post_id]["titulo"], _posts[post_id]["contenido"]))
     except:
-        return HttpResponse('<h1>No existe el blog</h1>')
+        return HttpResponse('<h1>No existe el post</h1>')
 ```
 
 # Renderizando Templates
@@ -73,15 +73,16 @@ Creamos una carpeta para nuestros templates y agregamos la siguente template
 Modificamos la vista para usar el template
 
 ```python
-def blog(request, blog_id):
+def post(request, post_id):
     try:
-        blog_id = int(blog_id)
+        post_id = int(post_id)
         return render(
             request,
             'post.html',
-            context={'titulo':posts[blog_id]["titulo"], "contenido":posts[blog_id]["contenido"]},
+            context={'titulo':posts[post_id]["titulo"], "contenido":posts[post_id]["contenido"]},
         )
     except:
-        return HttpResponse('<h1>No existe el blog</h1>')
+        return HttpResponse('<h1>No existe el post</h1>')
 ```
 
+<center><a href="https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion1/Práctica1.md">Práctica 1</a></center>

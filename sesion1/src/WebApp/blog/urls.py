@@ -5,6 +5,8 @@ from django.conf.urls import url
 
 urlpatterns = [
     url(r"^$", views.index),
-    url(r"^post/(?P<blog_id>[0-9])$", views.blog),
-    url(r"^posts$", views.blogs),
+    url(r"^posts$", views.posts),
+    url(r"^post/(?P<post_id>[0-9]+)$", views.post),
+    url(r"^bloggers$", views.bloggers),
+    url(r"^blogger/(?P<blogger_id>[0-9]+)$", views.blogger)
 ]
