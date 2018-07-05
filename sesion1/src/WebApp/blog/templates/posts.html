@@ -6,14 +6,13 @@
     <h1>Posts</h1>
     <table>
         <tr>
-            <th>id</th><th>titulo</th><th>blogger</th><th><th>post</th>
+            <th>id</th><th>titulo</th><th>blogger</th><th>
         </tr>
         {%for element in posts%}
             <tr>
                 <td>{{element.id}}</td>
-                <td>{{element.titulo}}</td>
+                <td><a href="/blog/post/{{ element.id }}"></a>{{element.titulo}}</a>></td>
                 <td><a href="/blog/blogger/{{element.blogger.id}}">{{element.blogger.nombre}} {{element.blogger.apellido}}</a>  </td>
-                <td><a href="/blog/post/{{ element.id }}">ir al post</a></td>
             </tr>    
         {% endfor %}
     </table>

@@ -41,7 +41,6 @@ def post(request, post_id):
     try:
         post_id = int(post_id)
         blogger = _bloggers[_posts[post_id]["blogger"]]
-        print(blogger)
         return render(
             request,
             'post.html',
@@ -64,7 +63,6 @@ def blogger(request, blogger_id):
         blogger_id = int(blogger_id)
         posts = []
         for post in _posts:
-            print(post)
             if blogger_id == post["blogger"]:
                 posts.append(post)
         return render(

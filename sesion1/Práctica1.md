@@ -40,7 +40,7 @@ Crear las siguientes vistas para nuestra aplicación.
    </td>
   </tr>
    <tr>
-   <td>List of all bloggers</td>
+   <td>Lista de todos los bloggers</td>
    <td><code>/blog/bloggers/</code></td>
    <td>
     <p>Lista de todos los bloggers:</p>
