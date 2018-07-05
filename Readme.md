@@ -10,13 +10,15 @@ Taller de desarrollo de aplicaciones web usando Django.
 
 + [Sesión 1:](https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion1)
     + ¿Qué es Django? [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion1/Qué%20es%20Django.md)
-    + Direccionando peticiones. [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion1/Direccionando%20peticiones.md)
+    + Primera aplicación. [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/blob/master/sesion1/Primera%20aplicaci%C3%B3n.md)
     + Rederizando templates. [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion1/Renderizando%20templates.md)
-    + Definiendo modelos. [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion1/Definiendo%20modelos.md)
+    + Práctica. [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/blob/master/sesion1/Pr%C3%A1ctica1.md)
 
 + [Sesión 2:](https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion2)
-    + Preparando estructura del proyecto. [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion2)
-    + Modelos y bases de datos. [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion2)
-    + Manejo de sesiones. [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion2)
-    + Peticiones de datos. [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion2)
+    + Configurando la base de datos. [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/blob/master/sesion2/Configurar%20Base%20de%20Datos.md)
+    + Usando modelos. [:arrow_forward:]https://github.com/sborquez/TallerDesarrolloWeb/blob/master/sesion2/Usando%20modelos.md)
+    + La página de administrador. [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/blob/master/sesion2/La%20p%C3%A1gina%20de%20administrador.md)
+    + Más sobre templates. [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/blob/master/sesion2/M%C3%A1s%20sobre%20templates.md)
+    + Práctica [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/blob/master/sesion2/Pr%C3%A1ctica2.md)
 
++ [Sesión 3:](https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion3)

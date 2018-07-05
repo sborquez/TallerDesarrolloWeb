@@ -219,3 +219,5 @@ Para efectuar nuestros cambios de los modelos en la base de datos debemos ejecut
 >>python manage.py makemigrations
 >>python manage.py migrate
 ```
+
+<center><a href="https://github.com/sborquez/TallerDesarrolloWeb/blob/master/sesion2/La%20p%C3%A1gina%20de%20administrador.md">Siguiente</a></center>

@@ -47,3 +47,5 @@ Para probar nuestra configuración ejecutamos
 ```bash
 >>>python manage.py migrate
 ```
+
+<center><a href="https://github.com/sborquez/TallerDesarrolloWeb/blob/master/sesion2/Usando%20modelos.md">Siguiente</a></center>

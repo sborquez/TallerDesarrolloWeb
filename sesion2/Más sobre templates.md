@@ -144,3 +144,6 @@ Usamos __extends__ para llamar a nuestro template __base__.
 Además redefinimos __{% block content %}__ con el contenido de nuestra página index.
 
 Se debe seguir esta estructura para crear los diferentes templates para cada vista.
+
+
+<center><a href="https://github.com/sborquez/TallerDesarrolloWeb/blob/master/sesion2/Pr%C3%A1ctica2.md">Práctica 2</a></center>

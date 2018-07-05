@@ -28,3 +28,5 @@ admin.site.register(Blogger)
 ## Usando la página de administrados
 
 Podemos acceder al dashboard de administrador desde el la url __/admin__. Desde aquí podemos crear, ver y modificar los diferentes registros de nuestra base de datos.
+
+<center><a href="https://github.com/sborquez/TallerDesarrolloWeb/blob/master/sesion2/M%C3%A1s%20sobre%20templates.md">Siguiente</a></center>
