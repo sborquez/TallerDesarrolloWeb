@@ -1,6 +1,6 @@
 # Usando modelos
 
-Django nos permite acceder y administrar laos datos de nuestra aplicación a travez del uso de objetos lladamos modelos los cuales son independientes de la base de datos elegida. Los modelos definen la estructura de los datos almacenados, incluidos los tipos de campo y los atributos de cada campo, como su tamaño máximo, valores predeterminados, lista de selección de opciones, texto de ayuda para la documentación, texto de etiqueta para formularios, etc.
+Django nos permite acceder y administrar laos datos de nuestra aplicación a través del uso de objetos lladamos modelos los cuales son independientes de la base de datos elegida. Los modelos definen la estructura de los datos almacenados, incluidos los tipos de campo y los atributos de cada campo, como su tamaño máximo, valores predeterminados, lista de selección de opciones, texto de ayuda para la documentación, texto de etiqueta para formularios, etc.
 
 Rara vez tendremos que utilizar sentencias de SQL para acceder a la base de datos, Django se encargará de realizar las _queries_ necesarias.
 

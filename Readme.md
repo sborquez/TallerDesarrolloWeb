@@ -22,3 +22,5 @@ Taller de desarrollo de aplicaciones web usando Django.
     + Práctica [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/blob/master/sesion2/Pr%C3%A1ctica2.md)
 
 + [Sesión 3:](https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion3)
+    + Usando sessions [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/blob/master/sesion3/Manejando%20sesiones.md)
+    + Autenticación de usuario [:arrow_forward:](https://github.com/sborquez/TallerDesarrolloWeb/blob/master/sesion3/Login%20y%20autenticación.md)

@@ -2,7 +2,7 @@
 
 ## Usando referencias a url
 
-A menudo utilizamos la etiqueta _a href_ de html para ir moviendonos a travéz de nuestra aplicación. Este etiqueta requiere del atributo _href_ el cual por lo general no queremos escribir manualmente. Django nos ayuda con esto usando la sentencia de los templates
+A menudo utilizamos la etiqueta _a href_ de html para ir moviendonos a través de nuestra aplicación. Este etiqueta requiere del atributo _href_ el cual por lo general no queremos escribir manualmente. Django nos ayuda con esto usando la sentencia de los templates
 
     <a href="{% url 'nombre_de_url' %}">Go</a>
 
