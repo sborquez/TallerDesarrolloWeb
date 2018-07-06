@@ -45,7 +45,7 @@ Para agregar las urls para los sitios de autenticación debemos agregar lo sigui
 
 ```python
 urlpatterns += [
-    path(r'^accounts/', include('django.contrib.auth.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
 ```
 
