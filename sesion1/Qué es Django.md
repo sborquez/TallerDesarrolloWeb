@@ -1,18 +1,17 @@
 # Django
 
-[Django](https://www.djangoproject.com/) es un framework web de alto nivel que permite el desarrollo de sitios web rapido, seguro y mantenible.
+[Django](https://www.djangoproject.com/) es un framework web de alto nivel que permite el desarrollo de sitios web de manera rapida, segura y mantenible.
 
-Es gratuito y de código abierto, tiene una comunidad próspera y activa, una gran documentación y muchas opciones de soporte gratuito y de pago. 
+Es gratuito y de código abierto, tiene una comunidad próspera y activa, una gran documentación y muchas opciones de soporte gratuito y de pago.
 
 Django es
 
-* Completo 
+* Completo
 * Versátil
 * Seguro
 * Escalable
 * Mantenible
 * Portable
-
 
 ## Arquitectura
 
@@ -27,7 +26,6 @@ Las aplicaciones web de Django normalmente agrupan el código que gestiona cada 
 * models: Son objetos que definen la estructura de los datos, proporcionan acceso a las bases de datos y ejecutan la lógica del negocio.
 * templates: Son plantillas, toman la respuesta generada por las vistas y les dan un formato.
 
-
 En resumen el flujo de trabajo:
 
 El usuario realiza una peticion HTTP al servidor. Esta petición es procesada por _urls_ y decide cual vista es la correspondiente a la solicitud. Esta _vista_ usará los modelos para obtener datos y operar sobre ellos para luego entregar los datos al _template_ el cual generará finalmente el documento _html_ que el usuario necesita.
@@ -38,7 +36,7 @@ Django posee varios modulos para las diferentes requisitos que nuestra aplicaci�
 
 * Formularios
 * Autentificación
-* Serialización 
+* Serialización
 * Sitio de admintrador
 
 <center><a href="https://github.com/sborquez/TallerDesarrolloWeb/tree/master/sesion1/Primera%20aplicación.md">Siguiente</a></center>

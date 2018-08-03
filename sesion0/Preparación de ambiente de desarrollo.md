@@ -14,6 +14,10 @@ Luego de la instalación las aplicaciones que nos intererán son:
 
 ### Creando un ambiente virtual
 
+Un ambiente virtual es una configuración independiente de nuestro sistema operativo, lo utilizamos para evitar colisiones de versiones entre las dependencias instaladas en nuestro computador y las requeridas por nuestro proyecto.
+
+Tenemos dos métodos para crear un ambiente virtual.
+
 #### Usando Anaconda Navigator
 
     1   Environments->Create
@@ -57,11 +61,13 @@ Finalmente importamos el modulo de django
 >>> import django
 ```
 
+Si no se genera ningún error, nuestro ambiente de desarrollo está configurado correctamente.
+
 ## Editor de textos
 
-Recomiendo usar uno de estos editores de textos. A ambos se le pueden agregar nuevas funcionalidades y soporte para lenguajes. 
+Recomiendo usar uno de estos editores de textos. A ambos se le pueden agregar nuevas funcionalidades y soporte para lenguajes.
 
-1. [Visual Studio Code](https://code.visualstudio.com/) 
+1. [Visual Studio Code](https://code.visualstudio.com/)
 2. [Sublime text 3](https://www.sublimetext.com/)
 
 ## Bases de datos

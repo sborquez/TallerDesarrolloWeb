@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Blog Home</h1>
+
+<p>Esta es la versión correspondiente la sesión 3</p>
+
+
+<p><b>visitas:</b> {{ visitas }}</p>
+
+
+{% if user.is_authenticated %}
+
+{% endif %}
+    <a href="{% url 'add-blogger'%}">Agregar un blogger</a>
+
+    <a href="{% url 'post_create'%}">Agregar un post</a>
+{% endblock %}
+
+Finalmente, podemos probar nuestra aplicación agregando, modificando y eliminando instancias de los modelos a través de formularios.

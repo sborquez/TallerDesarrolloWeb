@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}<title>Posts</title>{% endblock %}
+{% block content %}
+    <h1>Posts</h1>
+    <table>
+        <tr>
+            <th>id</th><th>titulo</th><th>blogger</th><th>Editar</th><th>Eliminar</th>
+        </tr>
+        {%for element in posts%}
+            <tr>
+                <td>{{element.id}}</td>
+                <td><a href="/blog/post/{{ element.pk }}">{{element.titulo}}</a></td>
+                <td><a href="/blog/blogger/{{element.blogger.id}}">{{element.blogger.nombre}} {{element.blogger.apellido}}</a>  </td>
+                <td><a href="/blog/post/{{ element.pk }}/update/">x</a></td>
+                <td><a href="/blog/post/{{ element.pk }}/delete/">x</a></td>
+            </tr>    
+        {% endfor %}
+    </table>
+{% endblock %}
+
+

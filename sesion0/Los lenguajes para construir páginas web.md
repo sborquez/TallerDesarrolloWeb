@@ -1,15 +1,46 @@
 # Páginas web
 
-Para crear una página web, por lo general usamos tres componentes
+Para crear una página web, por lo general usamos tres tecnologías.
 
 # HTML
 
-HTML es el lenguaje con el que se define el contenido de las páginas web. Utiliza un conjunto de etiquetas que sirven para definir _elementos_ y sus _atributos_, los elementos pueden ser  texto, imágenes, listas, vídeos, o canvas.
+HTML es el lenguaje con el que se define el contenido de las páginas web. Utiliza un conjunto de etiquetas que sirven para definir _elementos_ y sus _atributos_. Los elementos pueden ser texto, imágenes, formularios, entre otros. Nos referiremos a un objecto HTML como un documento, este sigue una estructura predefinida para que nuestro navegador pueda traducirlo a una página web.
 
-Este [editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default) en linea, nos permite ir previsualizando nuestra página web.
+Podemos utilizar este [editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default) en linea, para poder visualizar a tiempo real un documento en html.
 
 
 ## Estructura básica
+
+La estructura básica de un documento html posee al menos 3 etiquetas básicas:
+
+```html
+<html>
+    <head>
+        <!--este es un comentario-->
+    </head>
+    <body>
+        <!--este es un comentario-->    
+    </body>
+</html>
+```
+<table>
+    <tr> 
+        <th>Elemento</th> <th>Función</th>
+    </tr>
+    <tr> 
+        <td>html</td><td>Define al documento del tipo html</td>
+    </tr>
+    <tr>
+        <td>head</td><td>Define información de la página, para temas de indexación y metadata.</td>
+    </tr>
+    <tr>
+        <td>body</td><td>Define el cuerpo de la página, lo que se mostrará al usuario</td>
+    </tr>
+</table>
+
+## Etiquetas de contenido
+
+Podemos utilizar las siguentes etiquetas para definir contenido de texto.
 
 ```html
 <html>
@@ -22,18 +53,10 @@ Este [editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default)
     </body>
 </html>
 ```
+
 <table>
     <tr> 
         <th>Elemento</th> <th>Función</th>
-    </tr>
-    <tr> 
-        <td>html</td><td>Define la página</td>
-    </tr>
-    <tr>
-        <td>head</td><td>Define información de la página</td>
-    </tr>
-    <tr>
-        <td>body</td><td>Define el cuerpo de la página</td>
     </tr>
     <tr>
         <td>h1 a h6</td><td>Define títulos</td>
@@ -48,12 +71,6 @@ Este [editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default)
 Etiquetas para organizar como mostramos los elementos.
 
 ### Listas Ordenadas
-<ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ol>
-
 ```html
 <ol>
   <li>Coffee</li>
@@ -63,12 +80,6 @@ Etiquetas para organizar como mostramos los elementos.
 ```
 
 ### Listas No Ordenadas
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
-
 ```html
 <ul>
   <li>Coffee</li>
@@ -78,19 +89,6 @@ Etiquetas para organizar como mostramos los elementos.
 ```
 
 ### Tablas
-<table>
-    <tr> 
-        <th>Company</th> <th>Country</th>
-    </tr>
-    <tr> 
-        <td>Alfreds Futterkiste</td><td>Germany</td>
-    </tr>
-    <tr>
-        <td>Island Trading</td><td>UK</td>
-    </tr>
-</table>
-
-
 ```html
 <table>
     <tr> 
@@ -108,27 +106,6 @@ Etiquetas para organizar como mostramos los elementos.
 ### Formularios
 
 Usamos los [formularios](https://www.w3schools.com/html/html_forms.asp) para ingresar datos por parte de un usuario a través del navegador.
-
-<form>
-  Primer nombre:<br>
-  <input type="text" name="nombre">
-  <br>
-  Edad:<br>
-  <input type="number" name="edad">
-  <br>
-  Fecha de nacimiento: <br>
-  <input type="datetime-local" name="nacimiento">
-  <br>
-  Ciudad:<br>
-  <select name="ciudad">
-    <option value="valparaiso">Valparaiso</option>
-    <option value="santiago">Santiago</option>
-    <option value="vina">Viña del mar</option>
-  </select>
-  
-  <input type="submit" value="Submit">
-
-</form>
 
 ```html
 <form action="/">
@@ -192,26 +169,6 @@ Usamos selectores para ''buscar'' los elementos en la página, este selector pue
 *   Tipo de etiqueta
 *   Atributo id
 *   Atributo class
-
-<style>
-    h1.center {
-        color: navy;
-        margin-left: 20px;
-    }
-
-    #main {
-       background-color: lightblue;
-    }
-
-    .center {
-        text-align: center;
-    }
-</style>
-<div id="main">
-<h1 class="center">Titulo</h1>
-<p class="center">Texto centrado</p>
-</div>
-
 
 ```html
 <style>
