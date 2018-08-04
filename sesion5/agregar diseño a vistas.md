@@ -38,7 +38,6 @@ Es uno de los elementos más comunes, consiste de una barra en la parte superior
     <!--Nav Bar-->
     <div class="w3-top">
         <div class="w3-bar w3-left-align w3-large w3-orange">
-         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
          <a href="{% url 'index' %}" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i> Home</a>
          <a href="{%url 'posts'%}" class="w3-bar-item w3-button w3-padding-large w3-hover-white"><i class="fa fa-clipboard"></i></a>
          <a href="{%url 'bloggers'%}" class="w3-bar-item w3-button w3-padding-large w3-hover-white"><i class="fa fa-user"></i></a>
