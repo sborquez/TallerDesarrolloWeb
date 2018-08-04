@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}<title>Posts</title>{% endblock %}
+{% block content %}
+    <div class="w3-container w3-white w3-round w3-margin">
+        <h1>Posts</h1>
+    <!-- para pantallas grandes-->
+    <table class="w3-table-all w3-hide-small">
+        <tr class="w3-blue">
+            <th>id</th><th>titulo</th><th>blogger</th><th class="w3-center">Editar</th><th class="w3-center">Eliminar</th>
+        </tr>
+        {%for element in posts%}
+        <tr>
+            <td>{{element.id}}</td>
+            <td><a href="/blog/post/{{ element.pk }}">{{element.titulo}}</a></td>
+            <td><a href="/blog/blogger/{{element.blogger.id}}">{{element.blogger.nombre}} {{element.blogger.apellido}}</a>  </td>
+            <td class="w3-center"><a href="/blog/post/{{ element.pk }}/update/"><i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+            <td class="w3-center"><a href="/blog/post/{{ element.pk }}/delete/"><i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+        </tr>    
+        {% endfor %}
+    </table>
+    <!-- para pantallas pequeñas -->
+    <table class="w3-table-all w3-responsive w3-hide-large w3-hide-medium">
+            <tr class="w3-blue">
+                <th>id</th><th>titulo</th><th>blogger</th><th class="w3-center">Editar</th><th class="w3-center">Eliminar</th>
+            </tr>
+            {%for element in posts%}
+            <tr>
+                <td>{{element.id}}</td>
+                <td><a href="/blog/post/{{ element.pk }}">{{element.titulo}}</a></td>
+                <td><a href="/blog/blogger/{{element.blogger.id}}">{{element.blogger.nombre}} {{element.blogger.apellido}}</a>  </td>
+                <td class="w3-center"><a href="/blog/post/{{ element.pk }}/update/"><i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+                <td class="w3-center"><a href="/blog/post/{{ element.pk }}/delete/"><i class="fa fa-external-link-square" aria-hidden="true"></i></a></td>
+            </tr>    
+            {% endfor %}
+        </table>
+    <br>
+    </div>
+{% endblock %}
+
+

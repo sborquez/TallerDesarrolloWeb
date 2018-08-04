@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="w3-panel w3-pale-red">
+    <h3>Atención!</h3>
+
+    <p>Está a punto de eliminar el post: {{ post }}</p>
+    <form action="" method="POST">
+      {% csrf_token %}
+      
+        <input class="w3-btn w3-round-large w3-white w3-hover-red" type="submit" action="" value="Eliminar"/>
+    </form>
+    <br>
+</div> 
+
+{% endblock %}

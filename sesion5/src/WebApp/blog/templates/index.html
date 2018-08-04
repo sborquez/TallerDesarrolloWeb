@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header class="w3-container w3-white" >
+    
+    <h1>Blog Home</h1>
+    
+    <p>Esta es la versión correspondiente la sesión 5</p>
+    
+    
+    <p><b>visitas:</b> {{ visitas }}</p>
+</header>
+    
+
+{% if user.is_authenticated %}
+<a href="{% url 'add-blogger'%}">Agregar un blogger</a>
+
+<a href="{% url 'post_create'%}">Agregar un post</a>
+{% endif %}
+
+{% endblock %}

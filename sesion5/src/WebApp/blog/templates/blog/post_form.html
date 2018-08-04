@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="" method="post" style="width:412px"  class="w3-container  w3-card-4 w3-light-grey w3-text-blue w3-margin">
+    {% csrf_token %}
+    <h2> Post </h2>
+    
+    <div class="w3-row w3-section">
+      <h4>Titulo</h4>
+      {{ form.titulo }}
+    </div>
+    
+    <div class="w3-row w3-section">
+      <h4>Contenido</h4>
+      <div class="w3-rest">
+        {{ form.contenido }}
+      </div>
+    </div>
+    <div>
+      <input class="w3-button w3-block w3-section w3-blue w3-ripple w3-padding" type="submit" value="Enviar" />
+      <input type="hidden" name="next" value="{{ next }}" />
+    </div>
+  </form>
+
+{% endblock %}

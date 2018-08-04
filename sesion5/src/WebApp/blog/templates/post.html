@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}<title>{{ titulo }}</title>{% endblock %}
+{% block content %}
+
+<div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+    <span class="w3-right w3-opacity"><a href="/blog/blogger/{{blogger.id}}">{{blogger.nombre}} {{blogger.apellido}}</a></span>
+    <h3>{{ titulo }}</h3><br>
+    <hr class="w3-clear">
+    <p>{{ contenido }}</p>
+</div>
+{% endblock %}
+
